@@ -71,28 +71,52 @@ equals.addEventListener(`click`, function () {
 
 divide.addEventListener(`click`, function () {
   operator = `/`
-  calculationNumberOne = parseFloat(output.innerText);
-  output.innerText = ``
-  console.log(calculationNumberOne)
+  if(calculationNumberOne) {
+    calculationNumberTwo = parseInt(output.innerText)
+    calculationNumberOne = operators[operator](calculationNumberOne, calculationNumberTwo)
+    output.innerText = ``
+  } else {
+    calculationNumberOne = parseFloat(output.innerText);
+    output.innerText = ``
+    console.log(calculationNumberOne)
+  }
 })
 
 multiply.addEventListener(`click`, function () {
   operator = `*`
-  calculationNumberOne = parseFloat(output.innerText);
-  output.innerText = ``
-  console.log(calculationNumberOne)
+  if(calculationNumberOne) {
+    calculationNumberTwo = parseInt(output.innerText)
+    calculationNumberOne = operators[operator](calculationNumberOne, calculationNumberTwo)
+    output.innerText = ``
+  } else {
+    calculationNumberOne = parseFloat(output.innerText);
+    output.innerText = ``
+    console.log(calculationNumberOne)
+  }
 })
 
 minus.addEventListener(`click`, function () {
   operator = this.innerText
-  calculationNumberOne = parseFloat(output.innerText);
-  output.innerText = ``
-  console.log(calculationNumberOne)
+  if(calculationNumberOne) {
+    calculationNumberTwo = parseInt(output.innerText)
+    calculationNumberOne = operators[operator](calculationNumberOne, calculationNumberTwo)
+    output.innerText = ``
+  } else {
+    calculationNumberOne = parseFloat(output.innerText);
+    output.innerText = ``
+    console.log(calculationNumberOne)
+  }
 })
 
 add.addEventListener(`click`, function () {
   operator = this.innerText
-  calculationNumberOne = parseFloat(output.innerText);
-  output.innerText = ``
-  console.log(calculationNumberOne)
+  if(calculationNumberOne) {
+    calculationNumberTwo = parseInt(output.innerText)
+    calculationNumberOne = operators[operator](calculationNumberOne, calculationNumberTwo)
+    output.innerText = ``
+  } else {
+    calculationNumberOne = parseFloat(output.innerText);
+    output.innerText = ``
+    console.log(calculationNumberOne)
+  }
 })
